@@ -12,7 +12,7 @@ export class HttpService {
   		const headers = new Headers();
   		headers.append("Content-Type", "application/json");
   	
-  	return this.http.post("https://your-project-ID.firebaseio.com/data.json", body, {headers: headers}).map((response:Response) => response.json());
+  	return this.http.post("https://myapp-fedb2.firebaseio.com/data.json", body, {headers: headers}).map((response:Response) => response.json());
   }
 }
  
