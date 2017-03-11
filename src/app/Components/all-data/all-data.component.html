@@ -1,0 +1,12 @@
+<div class="list-group">
+ <h3 class="text-center">Angular Http GET Request</h3>
+  <a *ngFor="let item of items"  class="list-group-item list-group-item-action flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{item.title}}</h5>
+      <small class="text-muted">Latest</small>
+    </div>
+    <p class="mb-1">{{item.content}}</p>
+    <small class="text-muted">{{item.content}}.</small>
+  </a>
+  <a routerLink='/sendData' class="btn btn-primary">Back</a>
+</div>
